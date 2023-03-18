@@ -18,6 +18,9 @@
                     <th>Poderes</th>
                     <th>Idade</th>
                     <th>Sexo</th>
+                    <th>Arma</th>
+                    <th>Animal</th>
+                    <th>Filiação</th>
 
 
                 @foreach ($deuses as $deuses)
@@ -26,6 +29,9 @@
                         <td>{{ $deuses->poderes }}</td>
                         <td>{{ $deuses->idade}}</td>
                         <td>{{ $deuses->sexo}}</td>
+                        <td>{{ $deuses->arma}}</td>
+                        <td>{{ $deuses->animal}}</td>
+                        <td>{{ $deuses->filiação}}</td>
                     </tr>
                 @endforeach
             </table>

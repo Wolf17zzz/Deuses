@@ -21,7 +21,7 @@ Route::get('/', function () {
 Route::get('/Deuses', [DeusesController::class, 'index'])->name('Deuses.index');
 
 // Rota para o formulário de criação de gatos
-Route::get('/Deuses/create', [DeusesController::class, 'create'])->name('Deuses.create');
+Route::get('/deuses/novo', [DeusesController::class, 'create'])->name('Deuses.create');
 
 // Rota para o mostrar um gato específico
 Route::get('/Deuses/{id}', [DeusesController::class, 'show'])->name('Deuses.show');

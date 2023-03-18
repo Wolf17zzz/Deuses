@@ -17,7 +17,7 @@ class DeusesController extends Controller
 
     public function create()
     {
-
+        return view('deuses.create');
     }
 
 

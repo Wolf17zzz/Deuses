@@ -19,6 +19,6 @@ class Deus extends Model
         'sexo',
         'arma',
         'animal',
-        'filiação'
+        'filiacao'
     ];
 }

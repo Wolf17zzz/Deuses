@@ -50,12 +50,16 @@
 
                 <div class="mb-3">
                     <label>Filiação</label>
-                    <textarea name="filiação" id=" "class="form-control"></textarea>
+                    <textarea name="filiacao" id=" "class="form-control"></textarea>
                 </div>
 
                 <div>
                     <input type="submit" value="Salvar Deus" class="btn btn-primary">
+
+                    <a href="{{ route('deuses.index') }}">Voltar a lista</a>
                 </div>
+
+
             </form>
         </div>
     </body>

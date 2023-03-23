@@ -12,6 +12,8 @@
         <div class="container">
             <h1>Lista de Deuses</h1>
 
+            <a class="btn btn-outline-success my-2" href="{{ route('deuses.create') }}">Novo Deus</a>
+
             <table class="table table-hover table-bordered table-primary">
                 <tr class="table-dark">
                     <th>Nome</th>
@@ -31,8 +33,14 @@
                         <td>{{ $deuses->sexo}}</td>
                         <td>{{ $deuses->arma}}</td>
                         <td>{{ $deuses->animal}}</td>
-                        <td>{{ $deuses->filiação}}</td>
+                        <td>{{ $deuses->filiacao}}</td>
+                        <td> <a class="link" href="{{ route('deuses.show', $deuses->id) }}">
+                            Ver
+                        </a>
+                    </td>
                     </tr>
+
+
                 @endforeach
             </table>
         </div>

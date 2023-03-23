@@ -21,7 +21,8 @@ return new class extends Migration
             $table->string('sexo');
             $table->string('arma');
             $table->text('animal');
-            $table->string('filiação');
+            $table->string('filiacao');
+            $table->timestamps();
         });
     }
 

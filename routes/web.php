@@ -27,13 +27,13 @@ Route::get('/deuses/novo', [DeusesController::class, 'create'])->name('deuses.cr
 Route::get('/deuses/{deuses}', [DeusesController::class, 'show'])->name('deuses.show');
 
 // Rota para o formulário de edição de gatos
-Route::get('/deuses/{id}/edit', [DeusesController::class, 'edit'])->name('deuses.edit');
+Route::get('/deuses/{deuses}/editar', [DeusesController::class, 'edit'])->name('deuses.edit');
 
 // Rota que armazena um novo gato no banco de dados
 Route::post('/deuses', [DeusesController::class, 'store'])->name('deuses.store');
 
 // Rota que atualiza um gato específico no banco de dados
-Route::put('/deuses/{id}', [DeusesController::class, 'update'])->name('deuses.update');
+Route::put('/deuses/{deuses}', [DeusesController::class, 'update'])->name('deuses.update');
 
 // Rota que remove um gato específico do banco de dados
 Route::delete('/deuses/{id}', [DeusesController::class, 'destroy'])->name('deuses.destroy');

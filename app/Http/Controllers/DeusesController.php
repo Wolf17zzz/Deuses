@@ -55,14 +55,17 @@ class DeusesController extends Controller
     }
 
 
-    public function edit($id)
+    public function edit(Deus $deuses)
     {
-
+        return view('deuses.edit', compact('deuses'));
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $requisicao, $deuses)
     {
+        $deuses->update($requisicao->all());
 
+        // Redireciona para a página de detalhes do gato
+        return redirect()->route('deuses.show', $deuses->id);
     }
 
     public function destroy($id)

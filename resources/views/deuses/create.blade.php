@@ -56,7 +56,8 @@
                 <div>
                     <input type="submit" value="Salvar Deus" class="btn btn-primary">
 
-                    <a href="{{ route('deuses.index') }}">Voltar a lista</a>
+
+                    <a href="{{ route('deuses.index') }}" class="btn btn-primary">Voltar à Lista</a>
                 </div>
 
 

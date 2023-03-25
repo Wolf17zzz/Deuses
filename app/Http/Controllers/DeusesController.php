@@ -68,8 +68,10 @@ class DeusesController extends Controller
         return redirect()->route('deuses.show', $deuses->id);
     }
 
-    public function destroy($id)
+    public function destroy(Deus $deuses)
     {
+        $deuses->delete();
 
+        return redirect()->route('deuses.index');
     }
 }

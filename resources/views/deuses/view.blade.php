@@ -29,7 +29,14 @@
 
             <h2>{{ $deuses->filiacao }}</h2>
 
-            <a href="{{ route('deuses.index') }}">Voltar a lista</a>
+            <a class="btn btn-light" href="{{ route('deuses.index') }}">Voltar a lista</a>
+            <a class="btn btn-warning" href="{{ route('deuses.edit', $deuses->id) }}">Editar</a>
+
+            <form method="POST" action="{{ route('deuses.destroy', $deuses->id) }}">
+                @csrf
+                @method('DELETE')
+
+                <input type="submit" value="Excluir Deus" class="btn btn-danger">
         </div>
     </body>
 </html>

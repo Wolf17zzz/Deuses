@@ -8,6 +8,7 @@
 
         <title>Cadastro de Deuses</title>
     </head>
+
     <body>
         <div class="container mb-3">
             <h1>Novo Deus</h1>
@@ -55,8 +56,6 @@
 
                 <div>
                     <input type="submit" value="Salvar Deus" class="btn btn-primary">
-
-
                     <a href="{{ route('deuses.index') }}" class="btn btn-primary">Voltar à Lista</a>
                 </div>
 
